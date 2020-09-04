@@ -1,4 +1,8 @@
 // Your custom styles
+@import './pages/home.scss';
+
+
+
 * {
     padding: 0;
     margin: 0px;
@@ -6,9 +10,7 @@
 
 }
 
-body {
-    background-color: rgba(33, 33, 33, 0.1);
-}
+
 
 
 .header {
