@@ -854,9 +854,18 @@
                 padding: 0;
                 margin: 0;
 
+                @include mQ(992px) {
+
+                    justify-content: center;
+                }
+
                 li {
                     margin-right: 20px;
                     margin-top: 10px;
+
+                    @include mQ(992px) {
+                        margin: 20px;
+                    }
 
                     a {
                         width: 100px;
@@ -886,6 +895,11 @@
                 padding-left: 10px;
 
                 li {
+                    @include mQ(992px) {
+                        display: flex;
+                        justify-content: center;
+                    }
+
                     a {
                         display: flex;
                         align-items: center;
@@ -911,6 +925,8 @@
         .three {
             h5 {
                 font-weight: bolder;
+
+
             }
 
             ul {
@@ -918,6 +934,12 @@
 
                 li.last {
                     display: flex;
+                    justify-content: flex-start;
+
+                    @include mQ(992px) {
+                        justify-content: center;
+                        ;
+                    }
 
                     a {
 
@@ -939,6 +961,7 @@
                 margin: 0;
                 color: grey;
             }
+
         }
     }
 
