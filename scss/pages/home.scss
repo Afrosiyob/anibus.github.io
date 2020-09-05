@@ -827,4 +827,120 @@
         }
     }
 
+
+    .footer {
+
+        .one {
+            img {
+                width: 100px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            p {
+                i {
+                    font-size: 30px;
+                    padding-right: 10px;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                display: flex;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-right: 20px;
+                    margin-top: 10px;
+
+                    a {
+                        width: 100px;
+                        height: 100px;
+                        padding: 10px 12px;
+                        border-radius: 50%;
+                        border: 1px solid #195EC8;
+                        @extend %anim;
+                        color: #195EC8;
+
+                        &:hover {
+
+                            color: white;
+                            background-color: #195EC8;
+                        }
+                    }
+                }
+            }
+        }
+
+        .two {
+            h5 {
+                font-weight: bolder;
+            }
+
+            ul {
+                padding-left: 10px;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        align-content: center;
+
+                        div {
+                            background-color: #195EC8;
+                            height: 2px;
+                            width: 20px;
+                            margin-right: 10px;
+
+                        }
+
+                        p {
+                            padding: 0;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .three {
+            h5 {
+                font-weight: bolder;
+            }
+
+            ul {
+                padding-left: 10px;
+
+                li.last {
+                    display: flex;
+
+                    a {
+
+
+                        img {
+                            height: 30px;
+                            width: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .under-footer {
+
+
+            p {
+                padding: 0;
+                margin: 0;
+                color: grey;
+            }
+        }
+    }
+
+
 }
