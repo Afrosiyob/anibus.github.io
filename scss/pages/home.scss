@@ -771,7 +771,12 @@
                 width: 70%;
 
                 h4 {
+                    font-size: 32px;
                     font-weight: bolder;
+
+                    @include mQ(768px) {
+                        font-size: 22px;
+                    }
 
                     span {
                         font-weight: bold;
@@ -782,6 +787,33 @@
 
             .right-box {
                 width: 30%;
+
+                .owl-two {
+                    .item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+                        align-content: center;
+
+                        img {
+                            width: 100px;
+                            height: 100px;
+                        }
+
+                        .stars {
+                            display: flex;
+                            color: blue;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            text-align: center;
+                        }
+                    }
+                }
+
             }
 
             @include mQ(768px) {
