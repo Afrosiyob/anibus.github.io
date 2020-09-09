@@ -118,12 +118,15 @@ $( document ).ready( function () {
 
     $( '.top-box' ).click( function ( e ) {
         var iClass = $( this ).children( '#icon' ).attr( 'class' );
+
         e.preventDefault();
         $( this ).next( '.under-box' ).slideToggle();
         if ( iClass == 'fa fa-angle-down' ) {
             $( this ).children( '#icon' ).removeClass( 'fa-angle-down' ).addClass( 'fa-angle-up' );
+            $( this ).children( '#icontwo' ).removeClass( 'far fa-circle' ).addClass( 'fas fa-play' );
         } else if ( iClass == 'fa fa-angle-up' ) {
             $( this ).children( '#icon' ).removeClass( 'fa-angle-up' ).addClass( 'fa-angle-down' );
+            $( this ).children( '#icontwo' ).removeClass( 'fas fa-play' ).addClass( ' far fa-circle' );
         }
     } );
     $( '.tab-btn' ).click( function ( e ) {
