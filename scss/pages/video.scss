@@ -396,6 +396,32 @@
             }
 
         }
+
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+            justify-content: space-between;
+            grid-gap: 10px;
+
+            .grid-item {
+                background-color: rgb(33, 33, 33);
+                color: white;
+
+            }
+
+            .item1,
+            .item11 {
+                grid-column: 1/3;
+
+            }
+
+            .item2,
+            .item12 {
+                grid-column: 3/5;
+            }
+        }
+
     }
 
 
