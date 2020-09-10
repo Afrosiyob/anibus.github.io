@@ -4,9 +4,9 @@ $( document ).ready( function () {
     ( function () {
         'use strict';
         window.addEventListener( 'load', function () {
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+
             var forms = document.getElementsByClassName( 'needs-validation' );
-            // Loop over them and prevent submission
+
             var validation = Array.prototype.filter.call( forms, function ( form ) {
                 form.addEventListener( 'submit', function ( event ) {
                     if ( form.checkValidity() === false ) {
@@ -111,6 +111,25 @@ $( document ).ready( function () {
 
             } );
         }
+    } );
+
+
+    $( '.quastion-ans-btn' ).click( function ( e ) {
+
+        var idBtn = $( this ).attr( 'id' );
+
+        $( `${ '#box-' + idBtn }` ).slideDown();
+        $( `${ '#ex-' + idBtn }` ).slideUp();
+
+
+
+    } );
+
+
+    $( 'input[type="file"]' ).change( function ( e ) {
+        var fileName1 = e.target.files[ 0 ].name;
+        var fileName2 = e.target.files[ 1 ].name;
+        alert( 'The file "' + fileName1 + '" has been selected.' + fileName2 );
 
 
     } );

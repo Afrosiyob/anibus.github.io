@@ -19,24 +19,47 @@
 
 
         .header-main {
+            padding-top: 120px;
+            color: white;
 
+
+
+
+            @media screen and (max-width:992px) {
+                padding-top: 100px;
+            }
+
+            @media screen and (max-width:768px) {
+                padding-top: 100px;
+            }
 
             .inner-box-top {
-                padding-top: 120px;
-                color: white;
 
-
-
-
-                @media screen and (max-width:992px) {
-                    padding-top: 100px;
-                }
-
-                @media screen and (max-width:768px) {
-                    padding-top: 70px;
-                }
 
                 .header {
+
+                    .person-top {
+
+
+                        .under-box {
+                            display: flex;
+
+                            p {
+                                margin: 0;
+                                padding: 0;
+                                font-size: 14px;
+                            }
+
+                            ul {
+                                font-size: 14px;
+                                padding: 0;
+                                // margin: 0;
+                                margin-left: 30px;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
 
                     .left-box {
 
@@ -48,6 +71,24 @@
                         height: 500px;
                         overflow: auto;
 
+                        /* width */
+                        &::-webkit-scrollbar {
+                            width: 10px;
+                        }
+
+                        /* Track */
+                        &::-webkit-scrollbar-track {
+                            background: #182339;
+                        }
+
+                        /* Handle */
+                        &::-webkit-scrollbar-thumb {
+                            background: #195EC8;
+                        }
+
+
+
+
                         .inner-box {
 
 
@@ -58,8 +99,8 @@
                                 left: 0;
                                 top: 0;
                                 width: 100%;
-                                height: 100%;
-                                color: black;
+
+
 
                                 color: white;
 
@@ -68,6 +109,122 @@
                                     height: auto;
                                 }
 
+                                .ex-box,
+                                .ans-box {
+                                    position: absolute;
+
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+
+
+                                }
+
+                                .ex-box {
+                                    color: white;
+                                    background-color: rgb(13, 46, 61);
+
+                                    .item-box {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        @media screen and (max-width:768px) {
+                                            flex-direction: column;
+                                        }
+
+                                        img {
+                                            width: 49%;
+                                            height: auto;
+
+                                            @media screen and (max-width:768px) {
+                                                width: 100%;
+                                                margin-bottom: 10px;
+                                            }
+
+                                        }
+                                    }
+
+                                    .ans-data-box {
+                                        background-color: rgb(25, 57, 71);
+
+                                        textarea {
+                                            background-color: rgb(59, 87, 98);
+                                            color: white;
+                                            width: 100%;
+                                            border: none;
+                                            outline: none;
+                                            padding: 10px;
+                                        }
+
+                                        .files-wrap {
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            div {
+                                                display: flex;
+
+                                                i {
+                                                    margin-right: 10px;
+                                                }
+
+                                                p {
+                                                    padding: 0;
+                                                    margin: 0;
+                                                    line-height: 100%;
+                                                }
+                                            }
+                                        }
+
+                                        .input-group {
+
+                                            width: 100%;
+                                            overflow: hidden;
+                                            border-radius: 20px;
+                                            background-color: rgb(37, 67, 80);
+                                            display: flex;
+                                            justify-content: space-between;
+
+                                            input[type='submit'] {
+                                                background-color: #195EC8;
+                                                padding: 0 20px;
+                                                border-radius: 20px;
+                                                border: none;
+                                                outline: none;
+                                                color: white;
+                                                font-size: 14px;
+                                                font-weight: bolder;
+                                            }
+
+                                            input[type='file'] {
+                                                background-color: transparent;
+                                                border: none;
+                                                width: 80%;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+
+                                    .under-footer {
+                                        display: flex;
+                                        justify-content: space-between;
+
+                                        p {
+                                            padding: 0;
+                                            margin: 0;
+                                            color: white;
+                                        }
+
+                                        i {
+                                            color: red;
+                                        }
+                                    }
+                                }
+
+                                .ans-box {
+                                    display: none;
+                                    color: white;
+                                    background-color: green;
+                                }
                             }
                         }
                     }
@@ -321,6 +478,10 @@
         .top-title {
             h4 {
                 font-weight: bold;
+
+                span {
+                    border-bottom: 3px solid #195EC8;
+                }
             }
         }
 
@@ -345,6 +506,7 @@
 
                 .top-box {
                     display: flex;
+                    justify-content: space-between;
                     line-height: 100%;
 
                     div {
@@ -359,15 +521,25 @@
                             font-size: 14px;
                             text-decoration: none;
                             padding: 0;
-                            margin: 0;
-                            color: black;
+
+                            // color: black;
                             font-weight: bold;
                             @extend %anim;
 
-                            &:hover {
-                                color: blue;
+
+
+                        }
+
+                        .under-right {
+                            display: flex;
+
+                            a {
+                                margin-left: 20px;
                             }
 
+                            a:last-child {
+                                color: white;
+                            }
                         }
                     }
 
@@ -388,6 +560,23 @@
                 }
 
                 .kom-data {
+
+
+                    input {
+                        width: 80%;
+                        border-top: none;
+                        border-right: none;
+                        border-left: none;
+                        padding: 10px;
+                        border-bottom: 2px solid lightgrey;
+                        outline: none;
+                        font-size: 14px;
+
+                        @media screen and (max-width:768px) {
+                            width: 100%;
+                        }
+                    }
+
                     p {
                         font-size: 14px;
                     }
@@ -405,7 +594,7 @@
             grid-gap: 10px;
 
             .grid-item {
-                background-color: rgb(33, 33, 33);
+                background-color: red;
                 color: white;
 
             }
