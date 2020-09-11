@@ -223,7 +223,130 @@
                                 .ans-box {
                                     display: none;
                                     color: white;
-                                    background-color: green;
+                                    height: 100%;
+
+                                    // background-color: green;
+                                    .box-one {
+                                        .box-top {
+                                            padding: 15px 30px;
+
+                                            h4 {
+                                                color: white;
+                                                font-weight: bolder;
+                                            }
+
+                                            p {
+                                                font-size: 14px;
+                                            }
+
+                                            background-color: rgb(12, 45, 61);
+
+                                            @media all and (max-width:768px) {
+                                                padding: 10px;
+                                            }
+                                        }
+
+                                        .box-under {
+                                            padding: 15px 30px;
+                                            color: white;
+                                            background-color: rgb(23, 55, 70);
+
+                                            @media screen and (max-width:768px) {
+                                                padding: 10px;
+                                            }
+                                        }
+
+                                        button {
+                                            float: right;
+                                        }
+                                    }
+
+                                    .box-twoo {
+                                        display: flex;
+                                        padding: 15px 30px;
+                                        background-color: rgb(12, 45, 61);
+
+                                        @media all and (max-width:768px) {
+                                            padding: 10px;
+                                        }
+
+                                        .box-two-left-box {
+                                            padding-right: 10px;
+
+                                            img {
+                                                width: 50px;
+                                                height: 50px;
+                                                border-radius: 50%;
+                                            }
+                                        }
+
+                                        .box-two-right-box {
+                                            .box-top {
+                                                display: flex;
+
+                                                .box-top-left-box {
+                                                    p {
+                                                        font-size: 14px;
+                                                        color: white;
+                                                        padding: 0;
+                                                        margin: 0;
+                                                    }
+
+                                                    small {
+                                                        font-size: 12px;
+                                                        color: grey;
+                                                    }
+
+                                                    margin-right: 10px;
+                                                }
+
+                                                .box-top-right-box {
+                                                    a {
+                                                        color: white;
+
+                                                        i {
+                                                            margin-right: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+
+                                            .box-under {
+                                                p {
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+
+                                    }
+
+                                    .ball-box {
+                                        padding: 15px 30px;
+                                        display: flex;
+                                        justify-content: space-between;
+                                        background-color: rgb(23, 55, 70);
+
+                                        @media all and (max-width:768px) {
+                                            padding: 10px;
+                                        }
+
+                                        .left-ball {
+                                            h4 {
+                                                padding: 0;
+                                                margin: 0;
+                                                font-weight: bolder;
+                                            }
+                                        }
+
+                                        .right-ball {
+                                            h4 {
+                                                padding: 0;
+                                                margin: 0;
+                                                font-weight: bolder;
+                                                color: #66FF4F;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

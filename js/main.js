@@ -1,4 +1,20 @@
 $( document ).ready( function () {
+    $( '.all-news' ).owlCarousel( {
+
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    } );
 
 
     ( function () {
@@ -55,6 +71,8 @@ $( document ).ready( function () {
             }
         }
     } );
+
+
 
 
 
@@ -128,9 +146,7 @@ $( document ).ready( function () {
 
     $( 'input[type="file"]' ).change( function ( e ) {
         var fileName1 = e.target.files[ 0 ].name;
-        var fileName2 = e.target.files[ 1 ].name;
-        alert( 'The file "' + fileName1 + '" has been selected.' + fileName2 );
-
+        $( '#files-box' ).append( `${ '<div class="files-wrap mb-4"><div><i class="fas fa-file-alt"></i><p> ' + fileName1 + ' </p></div><i class="fas fa-trash-alt"></i></div>' }` );
 
     } );
 
