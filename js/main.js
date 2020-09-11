@@ -118,16 +118,10 @@ $( document ).ready( function () {
 
         if ( icon == 'far fa-play-circle' ) {
             $( this ).removeClass( 'far fa-play-circle' ).addClass( 'far fa-pause-circle' );
-            $( '#bg-video' ).css( {
-                'opacity': '1'
 
-            } );
         } else {
             $( this ).removeClass( 'far fa-pause-circle' ).addClass( 'far fa-play-circle' );
-            $( '#bg-video' ).css( {
-                'opacity': '0'
 
-            } );
         }
     } );
 
@@ -164,10 +158,19 @@ $( document ).ready( function () {
             $( this ).children( '#icontwo' ).removeClass( 'fas fa-play' ).addClass( ' far fa-circle' );
         }
     } );
+
+
     $( '.tab-btn' ).click( function ( e ) {
         var tabId = $( this ).attr( 'id' );
         $( `${ '#Left' + tabId }` ).fadeToggle( function () {
             $( '.inner-item' ).not( this ).fadeOut();
         } );
     } );
+
+
+    $( '.first-tab' ).trigger( 'click' );
+    $( '.first-course' ).trigger( 'click' );
+    $( '.first-course-item' ).trigger( 'click' );
+
+
 } );
