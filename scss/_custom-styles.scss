@@ -6,6 +6,7 @@
 @import './pages/enter.scss';
 @import './pages/video.scss';
 @import './pages/allnews.scss';
+@import './font/font.scss';
 
 
 * {
@@ -34,5 +35,13 @@ body {
     }
 
 
+
+}
+
+button.btn,
+.btn {
+    box-shadow: none;
+    background: #195EC8 0% 0% no-repeat padding-box !important;
+    font-size: 12px !important;
 
 }
