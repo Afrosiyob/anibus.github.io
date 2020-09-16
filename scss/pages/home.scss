@@ -43,6 +43,13 @@
             }
         }
 
+        .modal-header {
+            span {
+                color: white;
+            }
+        }
+
+
         .under-info {
             background-color: transparent;
             position: absolute;
@@ -288,8 +295,8 @@
                         outline: none;
                         width: 220px;
                         font-size: 14px;
-                        font-family: 'GT Walsheim Pro';
                         font-weight: 400;
+                        font-family: 'GT Walsheim Pro';
                         font-style: normal;
 
                         &::placeholder {
@@ -587,7 +594,6 @@
                     color: #195EC8;
                     font-weight: bold;
                     font-family: 'GT Walsheim Pro';
-
                     font-style: normal;
                 }
 

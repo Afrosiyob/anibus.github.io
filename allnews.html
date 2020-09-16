@@ -30,6 +30,7 @@
 
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font/font/stylesheet.css">
 
 
 </head>
@@ -37,364 +38,399 @@
 <body class="all-news-page">
 
 
-    <div class="header-section">
-        <video class="video" id="bg-video" autoplay loop muted>
-            <source src="./img/file.mp4" type="video/mp4" />
-        </video>
+    <div class="all-news-page">
+        <div class="header-section">
+            <video class="video" id="bg-video" autoplay loop muted>
+                <source src="./img/file.mp4" type="video/mp4" />
+            </video>
 
 
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-            <div class="container inner-box" id="nav-inner-box">
+            <!-- Navbar -->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar wow fadeInDown">
+                <div class="container inner-box" id="nav-inner-box">
 
-                <!-- Brand -->
-                <a class="navbar-brand" href="/index.html" target="_blank">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="/index.html" target="_blank">
 
-                    <img src="./img/logo_icon/logo_icon@2x.png" alt="logo">
-                </a>
+                        <img src="./img/logo_icon/logo_icon@2x.png" alt="logo">
+                    </a>
 
-                <!-- Collapse -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
+                    <!-- Collapse -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
 
-                <!-- Links -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <!-- Left -->
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item border search-box   border-light rounded-pill pl-3 pr-5">
+                        <!-- Left -->
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item border search-box   border-light rounded-pill pl-3 pr-5">
 
-                            <form action="#!">
-                                <i class="fa fa-search"></i>
-                                <input type="text" placeholder="Bugun nma o'rganmoqchisiz?">
-                            </form>
-
-
-                    </ul>
-
-                    <!-- Right -->
-                    <ul class="navbar-nav m-auto ">
-
-                        <li class="nav-item  d-flex justify-content-center">
-                            <a class="nav-link" href="/allCourses.html">Kurslar</a>
-                        </li>
-                        <li class="nav-item  d-flex justify-content-center">
-                            <a class="nav-link" href="/allnews.html">Yangiliklar</a>
-                        </li>
-                        <li class="nav-item  d-flex justify-content-center">
-                            <a class="nav-link" href="/backend.html">Blog</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end mr-0 pr-0">
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/enter.html">Ro'yxatdan o'tish!</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link btn btn-indigo rounded-pill pr-4 pl-4 pt-2 pb-2 "
-                                href="/enter.html">Tizimga
-                                kirish</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
-        </nav>
-        <!-- Navbar -->
-        <div class="bg-color-box">
+                                <form action="#!">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" placeholder="Bugun nma o'rganmoqchisiz?">
+                                </form>
 
 
+                        </ul>
 
-            <div class="container mid-box">
-                <div class="row">
-                    <div class="col-md-12 col-lg-8 left-box">
-                        <h2>
-                            Barcha yangiliklarimiz bilan
+                        <!-- Right -->
+                        <ul class="navbar-nav m-auto ">
 
-                        </h2>
-                        <h1><b> tanishing! </b></h1>
-                        <button type="button" class="btn btn-indigo rounded-pill">bepul boshlang!</button>
+                            <li class="nav-item  d-flex justify-content-center">
+                                <a class="nav-link" href="/allCourses.html">Kurslar</a>
+                            </li>
+                            <li class="nav-item  d-flex justify-content-center">
+                                <a class="nav-link" href="/allnews.html">Yangiliklar</a>
+                            </li>
+                            <li class="nav-item  d-flex justify-content-center">
+                                <a class="nav-link" href="/backend.html">Blog</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end mr-0 pr-0">
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/enter.html">Ro'yxatdan o'tish!</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-indigo rounded-pill pr-4 pl-4 pt-2 pb-2 "
+                                    href="/enter.html">Tizimga
+                                    kirish</a>
+                            </li>
+
+                        </ul>
 
                     </div>
-                    <div class=" col-md-12 col-lg-4 right-box ">
-                        <p>Videoni ko'ring!</p>
-                        <i class="far fa-play-circle" id="bg-video-btn"></i>
-                        <!-- <i class="far fa-pause-circle"></i> -->
+
+                </div>
+            </nav>
+            <!-- Navbar -->
+
+            <!-- Central Modal Small -->
+            <div class="modal fade " id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
+
+                <!-- Change class .modal-sm to change the size of the modal -->
+                <div class="modal-dialog modal-lg " role="document">
+
+
+                    <div class="modal-content ">
+                        <div class="modal-header unique-color-dark">
+                            <h4 class="modal-title w-100 text-white " id="myModalLabel">Modal title</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body unique-color-dark">
+                            <video class="video" id="bg-video" autoplay loop controls>
+                                <source src="./img/file.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Central Modal Small -->
+            <div class="bg-color-box">
+
+
+
+                <div class="container mid-box">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8 left-box wow fadeInLeft">
+                            <h2>
+                                Barcha yangiliklarimiz bilan
+
+                            </h2>
+                            <h1><b> tanishing! </b></h1>
+                            <button type="button" class="btn btn-indigo rounded-pill">bepul boshlang!</button>
+
+                        </div>
+                        <div class=" col-md-12 col-lg-4 right-box wow fadeInRight">
+                            <p>Videoni ko'ring!</p>
+                            <i class="far fa-play-circle" id="bg-video-btn" data-toggle="modal"
+                                data-target="#centralModalSm"></i>
+                            <!-- <i class="far fa-pause-circle"></i> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="container main-all-news-section my-5 ">
+            <div class="slider-box mb-3 wow fadeInDown">
+                <div class="all-news owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="left-slide-box">
+                                    <h4>Backend kursi</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit
+                                        amet.
+                                    </p>
+                                    <div class="under-box">
+                                        <p><i class="fas fa-thumbs-up"></i> 98% (155) <span
+                                                class="data">22.02.2020</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="right-slide-box">
+                                    <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="left-slide-box">
+                                    <h4>Backend kursi</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit
+                                        amet.
+                                    </p>
+                                    <div class="under-box">
+                                        <p><i class="fas fa-thumbs-up"></i> 98% (155) <span
+                                                class="data">22.02.2020</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="right-slide-box">
+                                    <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="left-slide-box">
+                                    <h4>Backend kursi</h4>
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit
+                                        amet.
+                                    </p>
+                                    <div class="under-box">
+                                        <p><i class="fas fa-thumbs-up"></i> 98% (155) <span
+                                                class="data">22.02.2020</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-lg-6 ">
+                                <div class="right-slide-box">
+                                    <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
+                                        alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+
+
+
+
+                        <img src="https://wallpaperaccess.com/full/49908.jpg" alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+                        <img src="https://eskipaper.com/images/awesome-shapes-wallpaper-1.jpg" alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+                        <img src="https://www.pxwall.com/wp-content/uploads/2018/04/Neon%20Shapes2679213676.jpg"
+                            alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+                        <img src="https://wallpapercave.com/wp/wp4514412.jpg" alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+                        <img src="https://image.freepik.com/free-vector/modern-gradient-geometric-shapes-wallpaper_23-2148438765.jpg"
+                            alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3 wow fadeInUp">
+                    <div class="items-box">
+                        <img src="https://c4.wallpaperflare.com/wallpaper/645/437/217/shapes-light-line-graphics-wallpaper-preview.jpg"
+                            alt="image">
+                        <div class="under-box">
+                            <h4>Frontend kursi(html,css,javascript,jquery,</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
 
+        <div class="footer wow fadeInUp">
+            <!-- Footer -->
+            <footer class="page-footer font-small unique-color-dark pt-4">
 
-    </div>
+                <!-- Footer Links -->
+                <div class="container text-center text-md-left">
+
+                    <!-- Grid row -->
+                    <div class="row py-5">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-md-0 mt-3 one">
+
+                            <!-- Content -->
+                            <img src="./img/logo_icon/logo_icon@2x.png" alt="this is logo">
 
 
+                            <p>Here you can use rows and columns to organize your footer content.</p>
 
+                            <p><i class="fas fa-map-marker-alt"></i> Toshkent, Yunusobod, Bog'ishamol ko'chasi, 1 uy</p>
 
+                            <ul>
+                                <li>
+                                    <a href="#!"><i class="fab fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#!"><i class="fab fa-facebook-square"></i></a>
+                                </li>
+                                <li><a href="#!"><i class="fab fa-telegram-plane"></i></a></li>
+                            </ul>
 
-    <div class="container main-all-news-section my-5">
-        <div class="slider-box mb-3">
-            <div class="all-news owl-carousel owl-theme">
-                <div class="item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="left-slide-box">
-                                <h4>Backend kursi</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet.
-                                </p>
-                                <div class="under-box">
-                                    <p><i class="fas fa-thumbs-up"></i> 98% (155) <span class="data">22.02.2020</span>
-                                    </p>
-                                </div>
-                            </div>
                         </div>
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="right-slide-box">
-                                <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
-                                    alt="image">
-                            </div>
+                        <!-- Grid column -->
+
+                        <hr class="clearfix w-100 d-md-none pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3 two">
+
+                            <!-- Links -->
+                            <h5>Sayt navigatsiyasi</h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!">
+                                        <div></div>
+                                        <p>Link 1</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div></div>
+                                        <p>Link 1</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div></div>
+                                        <p>Link 1</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <div></div>
+                                        <p>Link 1</p>
+                                    </a>
+                                </li>
+                            </ul>
+
                         </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 mb-md-0 mb-3 three">
+
+                            <!-- Links -->
+                            <h5>Kontaktlar </h5>
+
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!"> <b class="pr-2">Tel:</b> +998 91 357 39 79 </a>
+                                </li>
+                                <li>
+                                    <a href="#!"> <b class="pr-2">Fax:</b> +998 91 357 39 79 </a>
+                                </li>
+                                <li>
+                                    <a href="#!"> <b class="pr-2">E-mail:</b> info@iclub.com</a>
+                                </li>
+                                <li class="last pt-3">
+                                    <a href="#!" class="mr-3">
+                                        <img src="./img/paymi/BMq2jt7GhE7OyXm3JkFg@2x.png" alt="paymi">
+                                    </a>
+                                    <a href="#!" class="mr-3">
+                                        <img src="./img/paynet/EsZ1oumdZX2GpyRxd7XH@2x.png" alt="paynet">
+                                    </a>
+                                    <a href="#!" class="mr-3">
+                                        <img src="./img/ccccc/H3s2zhpLGXUtuXbfBBnU@2x.png" alt="click">
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                </div>
+                <!-- Footer Links -->
+
+                <!-- Copyright -->
+                <div class="footer-copyright py-3 under-footer">
+                    <div class="container d-flex w-100  justify-content-between">
+                        <p>© Built with Love By init online digital agency.</p>
+                        <p>Privace & Policy. Faq. Terms</p>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="left-slide-box">
-                                <h4>Backend kursi</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet.
-                                </p>
-                                <div class="under-box">
-                                    <p><i class="fas fa-thumbs-up"></i> 98% (155) <span class="data">22.02.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="right-slide-box">
-                                <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
-                                    alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="row">
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="left-slide-box">
-                                <h4>Backend kursi</h4>
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet.
-                                </p>
-                                <div class="under-box">
-                                    <p><i class="fas fa-thumbs-up"></i> 98% (155) <span class="data">22.02.2020</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6 ">
-                            <div class="right-slide-box">
-                                <img src="https://i.pinimg.com/originals/b1/20/8c/b1208c4002402c32d592cd9590e473d7.png"
-                                    alt="image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <!-- Copyright -->
+
+            </footer>
+            <!-- Footer -->
         </div>
 
-        <div class="row">
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
 
 
-
-
-                    <img src="https://wallpaperaccess.com/full/49908.jpg" alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
-                    <img src="https://eskipaper.com/images/awesome-shapes-wallpaper-1.jpg" alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
-                    <img src="https://www.pxwall.com/wp-content/uploads/2018/04/Neon%20Shapes2679213676.jpg"
-                        alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
-                    <img src="https://wallpapercave.com/wp/wp4514412.jpg" alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
-                    <img src="https://image.freepik.com/free-vector/modern-gradient-geometric-shapes-wallpaper_23-2148438765.jpg"
-                        alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <div class="items-box">
-                    <img src="https://c4.wallpaperflare.com/wallpaper/645/437/217/shapes-light-line-graphics-wallpaper-preview.jpg"
-                        alt="image">
-                    <div class="under-box">
-                        <h4>Frontend kursi(html,css,javascript,jquery,</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
-
-    <div class="footer">
-        <!-- Footer -->
-        <footer class="page-footer font-small unique-color-dark pt-4">
-
-            <!-- Footer Links -->
-            <div class="container text-center text-md-left">
-
-                <!-- Grid row -->
-                <div class="row py-5">
-
-                    <!-- Grid column -->
-                    <div class="col-md-6 mt-md-0 mt-3 one">
-
-                        <!-- Content -->
-                        <img src="./img/logo_icon/logo_icon@2x.png" alt="this is logo">
-
-
-                        <p>Here you can use rows and columns to organize your footer content.</p>
-
-                        <p><i class="fas fa-map-marker-alt"></i> Toshkent, Yunusobod, Bog'ishamol ko'chasi, 1 uy</p>
-
-                        <ul>
-                            <li>
-                                <a href="#!"><i class="fab fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="#!"><i class="fab fa-facebook-square"></i></a>
-                            </li>
-                            <li><a href="#!"><i class="fab fa-telegram-plane"></i></a></li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <hr class="clearfix w-100 d-md-none pb-3">
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3 two">
-
-                        <!-- Links -->
-                        <h5>Sayt navigatsiyasi</h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">
-                                    <div></div>
-                                    <p>Link 1</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <div></div>
-                                    <p>Link 1</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <div></div>
-                                    <p>Link 1</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#!">
-                                    <div></div>
-                                    <p>Link 1</p>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
-                    <div class="col-md-3 mb-md-0 mb-3 three">
-
-                        <!-- Links -->
-                        <h5>Kontaktlar </h5>
-
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!"> <b class="pr-2">Tel:</b> +998 91 357 39 79 </a>
-                            </li>
-                            <li>
-                                <a href="#!"> <b class="pr-2">Fax:</b> +998 91 357 39 79 </a>
-                            </li>
-                            <li>
-                                <a href="#!"> <b class="pr-2">E-mail:</b> info@iclub.com</a>
-                            </li>
-                            <li class="last pt-3">
-                                <a href="#!" class="mr-3">
-                                    <img src="./img/paymi/BMq2jt7GhE7OyXm3JkFg@2x.png" alt="paymi">
-                                </a>
-                                <a href="#!" class="mr-3">
-                                    <img src="./img/paynet/EsZ1oumdZX2GpyRxd7XH@2x.png" alt="paynet">
-                                </a>
-                                <a href="#!" class="mr-3">
-                                    <img src="./img/ccccc/H3s2zhpLGXUtuXbfBBnU@2x.png" alt="click">
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                    <!-- Grid column -->
-
-                </div>
-                <!-- Grid row -->
-
-            </div>
-            <!-- Footer Links -->
-
-            <!-- Copyright -->
-            <div class="footer-copyright py-3 under-footer">
-                <div class="container d-flex w-100  justify-content-between">
-                    <p>© Built with Love By init online digital agency.</p>
-                    <p>Privace & Policy. Faq. Terms</p>
-                </div>
-            </div>
-            <!-- Copyright -->
-
-        </footer>
-        <!-- Footer -->
-    </div>
-
-
-
 
 
     <!-- End your project here-->
@@ -413,6 +449,12 @@
         crossorigin="anonymous"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        $( document ).ready( function () {
+            new WOW().init();
+        } );
+    </script>
 
 </body>
 
